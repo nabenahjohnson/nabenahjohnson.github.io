@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang= "en">
+ <head>
+   <meta charset="utf-8">
+   <title> Nabenahjohnson </title>
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Didot|Lora" rel="stylesheet">
+
+   <!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider.js"></script>
+
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+
+    let myPortfolio = $('.js-portfolio');
+    let myDropDown = $('.js-dropdmenu');
+    console.log(myPortfolio)
+
+    myPortfolio.hover(function(event){
+      console.log('hover in');
+    }, function(){
+      console.log('hover out');
+      event.preventDefault()
+      myDropDown.toggleClass('hidden')
+    });
+
+
+  });
+</script>
+
+ </head>
+
+ <body>
+ <div class= "page-wrap">
+
+   <header>
+     <img class="finallogonew-img" src="images/finallogonew.svg" alt="final logo for brand">
+     <h1> Nabenah Johnson</h1>
+     <h2> Creative Consultant: Stylist/ Creative Direction/ </h2>
+ <!-- this is my comment for my name and bio. -->
+
+ </header>
+
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a class="js-portfolio" href="portfolio.html">Portfolio</a>
+       <a href="contact.html">Contact</a>
+
+       <div class="js-dropdmenu hidden">
+         <ul>
+         <li><a href="studio.html">Studio Shoot</a></li>
+         <li><a href="springsummer.html"> Spring Summer 2019</a></li>
+         <li><a href="litp.html"> Lovers In The Parking Lot</a></li>
+       </ul>
+
+    </nav>
+
+    <main role="main">
+      <!-- Place somewhere in the <body> of your page -->
+    <div class="flexslider">
+    <ul class="slides">
+    <li>
+      <img src="images/studio1.jpg" />
+    </li>
+    <li>
+      <img src="images/studio2.jpg" />
+    </li>
+    <li>
+      <img src="images/studio3.jpg" />
+    </li>
+    </ul>
+    </div>
+
+    <!-- Portfolio images from before in <body> of my page
+    <img class="litp1-img"src="images/litp1.jpg" alt="first image litp1">
+    <img class="litp2-img"src="images/litp2.jpg" alt="second image litp2">
+    <img class="litp3-img"src="images/litp3.jpg" alt="third image of litp3">
+    <img class="studio2-img"src="images/studio2.jpg" alt="studio two">
+    <img class="studio1-img"src="images/studio1.jpg" alt="studio one">
+    -->
+
+    </div>
+
+    <footer>
+     <p> copyright naj &copy;</p>
+
+
+
+    </footer>
+    </body>
+    </html>

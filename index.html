@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang= "en">
+ <head>
+   <meta charset="utf-8">
+   <title> Nabenahjohnson </title>
+   <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Didot|Lora" rel="stylesheet">
+
+   <!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider.js"></script>
+
+<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+
+    let myPortfolio = $('.js-portfolio');
+    let myDropDown = $('.js-dropdmenu');
+    console.log(myPortfolio)
+
+    myPortfolio.hover(function(event){
+      console.log('hover in');
+    }, function(){
+      console.log('hover out');
+      event.preventDefault()
+      myDropDown.toggleClass('hidden')
+    });
+
+
+  });
+</script>
+
+
+
+ </head>
+
+
+ <body>
+ <div class= "page-wrap">
+
+   <header>
+     <img class="finallogonew-img" src="images/finallogonew.svg" alt="final logo for brand">
+     <h1> Nabenah Johnson</h1>
+     <h2> Creative Consultant: Stylist/ Creative Direction/ </h2>
+<!-- this is my comment for my name and bio. -->
+
+</header>
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a class="js-portfolio" href="portfolio.html">Portfolio</a>
+       <a href="contact.html">Contact</a>
+
+       <div class="js-dropdmenu hidden">
+         <ul>
+         <li><a href="studio.html">Studio Shoot</a></li>
+         <li><a href="springsummer.html"> Spring Summer 2019</a></li>
+         <li><a href="litp.html"> Lovers In The Parking Lot</a></li>
+       </ul>
+    
+
+
+    </nav>
+
+
+
+    <main role="main">
+    <img class= "purpleblazer-img"src="images/purpleblazer.png" alt="image of me in purple blazer">
+
+
+  </div>
+
+   <footer>
+     <p> copyright naj &copy;</p>
+
+   </footer>
+ </body>
+</html>

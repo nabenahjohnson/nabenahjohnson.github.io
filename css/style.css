@@ -1,0 +1,132 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background: white;
+  margin: 40px 40px;
+  padding: 40px 40px;
+}
+
+p{
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 30px
+}
+/* color of copyright logo */
+
+body {
+ font-family: 'Lora', sans-serif;
+}
+
+h1 {
+  font-family: 'Didot', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+  padding-right: 223px;
+    padding-left: 234px;
+    font-size: 45px;
+    padding-bottom: 25px;
+
+}
+
+h2 {
+  font-size: 24px;
+  padding-top: 40px;
+  padding-right: 100px;
+    text-align: center;
+    padding-left: 62px;
+}
+h1, h2 {
+  color: black;
+  font-family: 'Didot', sans-serif;
+  font-weight: lighter;
+}
+
+
+.finallogonew-img {
+      width: 40%;
+}
+
+nav a {
+  color: black;
+  text-decoration: underline; /* removes the underline */
+  padding-left: 37px;
+    padding-right: 0px;
+}
+
+
+blockquote{
+  clear: both;
+}
+
+
+
+.purpleblazer-img {
+ float: inherit;
+    padding-bottom: 5%;
+    padding-top: 40px;
+ /* image of myself in purple blazer centre */
+}
+
+.headshot-img {
+  float: inherit;
+     padding-bottom: 5%;
+     padding-top: 40px;
+     width: 70%;
+}
+
+.litp4-img {
+  float: inherit;
+  padding-bottom: 5%;
+  padding-top: 40px;
+  width: 70%;
+}
+
+
+
+.contact-bg {
+  background-image: url("../images/chairasha1.jpg");
+  background-size: cover;
+  overflow-x: visible;
+    position: relative;
+}
+  
+
+ul {
+  list-style-type: none;
+  display: block;
+   line-height: 1.5;
+   text-align: left;
+   left: 40%;
+   z-index:9999;
+
+}
+
+  .js-dropdmenu {
+    position: absolute;
+    background: pink;
+    z-index: 9999;
+    right: 510px;
+  }
+
+  .js-dropdmenu.hidden {
+    display: none;
+  }
+
+  .js-portfolio {
+    position: relative;
+
+  }
+
+
+.page-wrap{
+max-width: 900px;
+margin: 0 auto;
+text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 1px;
+}
